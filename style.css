@@ -1,0 +1,280 @@
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    animation: fadeIn 1s;
+
+}
+/*-- ANIMATION --*/;
+
+.fade-in{
+    animation: fadeIn 2s;
+}
+body{
+    position: relative;
+    top: 5vh;
+    overflow-x:hidden;
+}
+.bg{
+        background-image: url(backol.png); /* varia */
+        background-size: 110%;
+        background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0vh;
+    z-index: -2;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*menu*/
+#logo{
+    width: 80px;
+    box-shadow: 5px 0px 23px rgba(135, 134, 134, 0.569);
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+.menu-back{
+    width: 100vw;
+    height: 100px;
+
+}
+ul#menu {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+ul#menu li {
+
+    display: block;
+    position: relative;
+    top: 2vh;
+    width: 150px;
+    height: 55px;
+    margin: 2px;
+    float: left; /* elementi su singola riga */
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+
+}
+ul#menu li a { 
+
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    
+}
+ul#menu li.active, ul#menu li:hover {
+
+    background-color: #f7e38c;
+    height: 50px;
+    position: relative;
+    top: 1vh;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+/*menu tel*/
+
+#menu-img{
+    width: 0px;
+}
+.panel{
+    font-size: 0px;
+    opacity: 0;
+}
+
+
+
+
+
+/*sezioni*/
+section{
+    width: 100vw;
+    height: 100vh;
+
+    /* border: solid red 2px; */
+}
+
+
+
+/* 1 */
+.int{
+    background-color: rgb(184, 176, 176);
+    height: 450px;
+    width: 50vw;
+    box-shadow: 3px 6px 10px;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+
+}
+
+.pesceint {
+    position: relative;
+    width: 50%;
+    left: 60vw;
+    top: -370px;
+
+
+    /* border: solid red 2px; */
+    opacity: 1;
+}
+.pesceint img{
+    position: relative;
+    width: 70%; 
+}
+
+
+#text-int {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: #3d3939;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #f7e38c 1px 1px 1px;
+
+    /* border: solid red 2px; */
+}
+#text-int h1{
+    position: relative;
+    top: 70px;
+}
+
+
+
+
+
+/* 2 */
+.analisi{
+    /* border: solid red 2px; */
+}
+#Analisi .analisi div{
+    background-color: rgb(184, 176, 176);
+    height: 450px;
+    width: 30vw;
+    box-shadow: 3px 6px 10px;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    top: 95px;
+}
+
+#Analisi .analisi div h1{
+    color: rgb(46, 44, 44);
+    margin-top: 10px;
+}
+#content{
+    font-size: 20px;
+    margin-top: 0px;
+    width: 90%;
+    margin-left: 15px;
+    text-shadow: #f7e38c 1px 1px 1px;
+}
+
+.fade-in-element {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in-element-inpage {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 3 */
+
+#Definizione div img{
+    position: absolute;
+    width: 500px;
+    margin-left: 75px;
+    border-radius: 20px;
+    margin-top: 57px;
+}
+
+.prospettive{
+    background-color: rgb(184, 176, 176);
+    height: 450px;
+    width: 50vw;
+    box-shadow: 3px 6px 10px;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    top: 45px;
+
+}
+
+.pros-txt{
+    
+    font-size: 17px;
+    padding-top: 15px;
+    width: 90%;
+    margin-left: 15px;
+    text-shadow: #f7e38c 1px 1px 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#tarta{
+    left: 500px;
+    position: relative;
+    border-radius: 20px;
+    width: 20vw;
+    margin-left: -65vw;
+    margin-top: 30px;
+}
+
+.conclusione{
+    background-color: rgb(184, 176, 176);
+    height: 450px;
+    width: 50vw;
+    box-shadow: 3px 6px 10px;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    top: 45px;
+}
+
+#conclusione-txt{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #f7e38c 1px 1px 1px;
+    font-size: 17px;
+    top: 20px;
+}
